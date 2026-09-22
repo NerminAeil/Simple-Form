@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="simple-Form.css"></link>
+</head>
+<body>
+    <section id="createAccount">
+         <form class="signup-container">
+        <h1>Create Your Account</h1>
+        <input type="text" class="FirstName" placeholder="First Name" autofocus>
+        <input type="text" class="LastName" placeholder="Last Name">
+        <input type="text" class="Username" placeholder="Username">
+        <input type="Email" class="Email" id="email" placeholder="Email" required>
+       <div class="Password"> 
+        <input type="password"  id="password" placeholder="Password" required>
+       <input type="button" class="generate-password" onclick="GeneratePassword();" value="Generate-Password">
+    <span id="show" onclick="showPassword();">(⚆_⚆)</span>
+</div>
+        <p id="passwordstrength" ></p>
+        <ul class="Password-requirement" >
+             <li>At least 8 characters</li>
+                <li>One uppercase letter</li>
+                <li>One lowercase letter</li>
+                <li>One number</li>
+                <li>One special character</li>
+        </ul>
+        <input type="password" id="confirm-password"  placeholder="Confirm Password" required>
+         <p id="password-match" ></p>
+       <input type="button" class="submit-btn" onclick="Creation();"  value="Create Account">
+        <label for="items"><input type="checkbox" id="terms" required>I agree to the Terms & Conditions.</label>
+        <p>Already have an account?<a href="#LoginPage" class="loginBtn">Login</a></p>
+    </form>
+    <p id="signup" ></p>
+    <input type="button" class="resetSignin" value="Reset">
+</section>
+   <section id="LoginPage" >
+   <form class="login-container">
+    <h1>Login</h1>
+    <input type="Email" class="EmailLogin" placeholder="Email" required autofocus>
+        <input type="password" id="passwordLogin" placeholder="Password" required>
+    <input type="button" class="Login" onclick="Login();" value="Login">
+   <label for="rememberMe"><input type="checkbox"  id="rememberMe" required>Remember Me</label>
+    <p>
+        <a href="#getPasswordPage" class="getBtn">Forget Password?</a></p>
+   </form>
+   <p id="login" ></p>
+   <input type="button" value="Reset" class="resetLogin">
+   </section>
+
+   <section id="getPasswordPage">
+    <form class="reset-container">
+        <h1>Forgot Password ?</h1>
+        <input type="Email" class="EmailPass" placeholder="Enter your Email address" required autofocus>
+         <input type="button" id="reset-password-submit" class="resetPassword" onclick="ResetPassword();" value="Reset Password">
+    </form>
+    <p id="reset" ></p>
+    <input type="button" value="Reset" class="resetPasswordClear">
+   </section>
+    <script src="simple-Form.js"></script>
+</body>
+</html>
