@@ -464,8 +464,8 @@ input[type="checkbox"] {
   .reset-container {
     padding: 22px 14px;
     border-radius: 18px;
-    width:300px;
-    max-width:400px;
+    width:350px;
+    max-width:450px;
   }
 
   .signup-container h1,
