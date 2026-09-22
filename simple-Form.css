@@ -458,11 +458,11 @@ input[type="checkbox"] {
 }
 
 /* ================= Responsive ================= */
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .signup-container,
   .login-container,
   .reset-container {
-    padding: 32px 24px;
+    padding: 22px 14px;
     border-radius: 18px;
     width:300px;
     max-width:400px;
@@ -475,11 +475,11 @@ input[type="checkbox"] {
   }
 
   .generate-password {
-    font-size: 0.72rem;
+    font-size: 1rem;
     padding: 10px 8px;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1032px) {
   .signup-container,
   .login-container,
   .reset-container {
