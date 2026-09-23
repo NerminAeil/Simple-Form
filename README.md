@@ -35,10 +35,10 @@ Simple-Form/
 ├── index.html
 ├── simple-Form.css
 ├── simple-Form.js
-├── README.md
+└── README.md
+```
 
 ## Files
-
 - `index.html` – page structure
 - `simple-Form.css` – styling and animations
 - `simple-Form.js` – form logic and validation
